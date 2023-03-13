@@ -43,6 +43,9 @@ cd brand-new-service
 # Render chart
 helm template mychart .
 
+# Pass override values file
+helm template mychart . -f override-values.yaml
+
 # Render specific template e.g. deployment.yaml
 # We can pass template file path using -s flag
 helm template mychart . -s templates/deployment.yaml
